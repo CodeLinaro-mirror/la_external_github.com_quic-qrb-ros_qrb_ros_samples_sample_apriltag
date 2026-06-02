@@ -8,5 +8,5 @@ Standards-Version: 3.9.2
 
 Package: ros-jazzy-sample-apriltag
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-apriltag-ros, ros-jazzy-image-proc, ros-jazzy-qrb-ros-camera, ros-jazzy-qrb-ros-colorspace-convert, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-apriltag-ros, ros-jazzy-image-proc, ros-jazzy-qrb-ros-camera, ros-jazzy-qrb-ros-colorspace-convert-opengles, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch
 Description: AprilTag sample package
