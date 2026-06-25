@@ -34,15 +34,9 @@ The pipeline accepts NV12 images from `qrb_ros_camera`, converts to RGB8, rectif
 
 ## 🚀 Usage
 
-> The AprilTag pipeline is compatible exclusively with the Ubuntu server image.
-
 ### Start the AprilTag pipeline
 
 ```bash
-export XDG_RUNTIME_DIR=/run/user/1000
-export WAYLAND_DISPLAY=wayland-1
-sudo systemctl start weston-autostart.service
-
 source /opt/ros/jazzy/setup.bash
 ros2 launch sample_apriltag sample_apriltag.launch.py
 ```
