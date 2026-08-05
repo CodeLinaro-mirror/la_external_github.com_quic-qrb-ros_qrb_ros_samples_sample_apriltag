@@ -1,0 +1,25 @@
+From 19e92f73c0656049305976b4bb6eaf3c1e6cc57c Mon Sep 17 00:00:00 2001
+From: chalia <chalia@qti.qualcomm.com>
+Date: Wed, 29 Jul 2026 14:59:54 +0800
+Subject: [PATCH] sample-apriltag: drop ros-jazzy-apriltag-ros and image-proc
+ deps
+
+These pulled in the ROS jazzy cv-bridge/image-proc stack and, via
+opencv, an unwanted Qt5/ffmpeg toolchain into the qirp-sdk image.
+
+Change-Id: Ic2f2bc5403a2abb9a41fe26a66faa7e29dbcd1ab
+---
+ debian/control | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/debian/control b/debian/control
+index bd0bf68..1909fb3 100644
+--- a/debian/control
++++ b/debian/control
+@@ -8,5 +8,5 @@ Standards-Version: 3.9.2
+ 
+ Package: ros-jazzy-sample-apriltag
+ Architecture: any
+-Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-apriltag-ros, ros-jazzy-image-proc, ros-jazzy-qrb-ros-camera, ros-jazzy-qrb-ros-colorspace-convert-opengles, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch
++Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-qrb-ros-camera, ros-jazzy-qrb-ros-colorspace-convert-opengles, ros-jazzy-rclcpp-components, ros-jazzy-ros2launch
+ Description: AprilTag sample package
